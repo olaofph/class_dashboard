@@ -1,8 +1,9 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
-df = pd.read_csv("C:/Users/HP PC/OneDrive/Desktop/sales_data.csv")
+df = pd.read_csv("sales_data.csv")
 
 df["total"] = df["Quantity_Sold"] + df["Sales_Amount"]
 st.title("Sales Dashboard")
@@ -55,14 +56,7 @@ with col2:
 #     ax.set_title("Product Category Revenue")
 #     ax.ticklabel_format(style='plain', axis='y')
 #     st.pyplot(fig)
-
-
-
-
-import streamlit as st
-import pandas as pd
 # import matplotlib.pyplot as plt
-import seaborn as sns
 
 # from stream import product_category
 
